@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fib = [];
+        fib[0] = 0;
+        fib[1] = 1;
+        for (i = 2; i < 20; i++) {
+            fib[i] = fib[i - 2] + fib[i - 1];
+        }
+        let sum = 0;
+        for (n in fib) {
+            sum += fib[n];
+            console.log(sum);      
+        }
+        document.write(fib + "<br/>" + "Tổng là:" + sum);
+    </script>
+</body>
+
+</html>
